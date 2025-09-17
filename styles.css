@@ -22,27 +22,6 @@ body {
   display: flex;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form div {
-    /* border:1px solid red; */
-    display: flex;
-    justify-content: space-between;
-}
-
-form div div {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-label, input {
-    display: block;
-}
-
 .left {
     /* border: 3px solid red; */
     position: relative;
@@ -76,6 +55,44 @@ label, input {
     color:#fff;
     font-family: myFirstFont;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    
+}
+
+.card {
+    /* border: 1px solid red; */
+    box-shadow: 0 5px 5px rgba(0, 0, 0,0.2);
+    padding: 1em 3em;
+}   
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .row {
+    border:1px solid red;
+    display: flex;
+    gap: 3rem;
+    justify-content: flex-start;
+}
+
+form div div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label, input {
+    display: block;
+}
+
 
 
 
