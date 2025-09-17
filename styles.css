@@ -17,6 +17,19 @@ body {
   display: flex;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    border:1px solid red;
+}
+
+label, input {
+    display: block;
+}
+
 .left {
     /* border: 3px solid red; */
 }
