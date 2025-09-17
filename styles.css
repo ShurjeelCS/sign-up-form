@@ -107,8 +107,29 @@ form .row div {
     
 }
 
-label, input {
-    display: block;
+label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+input {
+    border: 1px solid rgba(0, 0, 0,0.1);
+    border-radius: 5px;
+    padding:0.2em;
+    outline: none;
+}
+
+input:valid {
+    border: 1px solid rgba(0, 0, 0,0.1);
+}
+
+input:focus {
+    box-shadow: 3px 5px 6px rgba(0, 0, 0,0.3);
+    border: 1px solid #1c28cc;
+}
+
+.pswd:invalid {
+    border: 1px solid red;
 }
 
 
