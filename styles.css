@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+@font-face {
+  font-family: myFirstFont;
+  src: url(Norse-Bold.otf);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -23,7 +28,15 @@ form {
 }
 
 form div {
-    border:1px solid red;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+form div div {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 label, input {
@@ -32,9 +45,37 @@ label, input {
 
 .left {
     /* border: 3px solid red; */
+    position: relative;
 }
 
-.left img {
+.left .tree {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
+
+.left .strip{
+    /* border: 2px solid blue; */
+    position: absolute;
+    top: 15vw;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.strip img {
+    width:5em;
+}
+
+.strip h1 {
+    font-size: 5em;
+    color:#fff;
+    font-family: myFirstFont;
+}
+
+
+

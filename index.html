@@ -8,7 +8,12 @@
 </head>
 <body>
     <div class="left">
-        <img src="background.jpg" alt="">
+        <img src="background.jpg" alt="" class="tree">
+        <div class="strip">
+            <img src="odin-lined.png" class="logo">
+            <h1>ODIN</h1>
+        </div>
+        
     </div>
     <div class="container">
         <div class="card">
@@ -21,29 +26,51 @@
 
             <form action="">
                 <div>
+                    <div>
                     <label for="firstname">FIRST NAME</label>
-                    <input type="text" id="firstname" name="firstname">
-                   
-                    <label for="lastname">LAST NAME</label>
-                    <input type="text" id="lastname" name="lastname">
+                    <input type="text" id="firstname" name="firstname" required>
+                    </div>
+                    
+                   <div>
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                   </div>
+                    
             
 
                 </div>
                 
                 <div>
-                    <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
-                <label for="number">PHONE NUMBER</label>
-                <input type="number" name="number" id="number">
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="number">PHONE NUMBER</label>
+                        <input type="number" name="number" id="number" required>
+                    </div>
+                    
                 </div>
                 <div>
-                    <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
-                <label for="rePassword">CONFIRM PASSWORD</label>
-                <input type="password" name="rePassword" id="rePassword">
+                    <div>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="rePassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="rePassword" id="rePassword" required>
+                    </div>
+                    
+                    
                 </div>
                 
             </form>
+        </div>
+
+        <div>
+            <button class="create" type="submit">Create Account
+            </button>
+            <p>Already have an account? <span>Log in</span></p>
         </div>
     </div>
 </body>
