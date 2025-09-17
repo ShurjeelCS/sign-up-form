@@ -38,7 +38,7 @@ body {
 .left .strip{
     /* border: 2px solid blue; */
     position: absolute;
-    top: 15vw;
+    top: 35vh;
     left: 0;
     width: 100%;
     display: flex;
@@ -65,13 +65,15 @@ body {
     /* width: 100%; */
     flex-grow: 1;
     gap: 2rem;
-    
+    background-color: #e7e7e7;
 }
 
 .card {
     /* border: 1px solid red; */
     box-shadow: 0 5px 5px rgba(0, 0, 0,0.2);
     padding: 1em 3em;
+    background-color: #fff;
+    border-radius: 10px;
 }   
 .size {
  font-size: 1.5rem; 
@@ -108,8 +110,8 @@ form .row div {
 }
 
 label {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 900;
 }
 
 input {
@@ -124,12 +126,31 @@ input:valid {
 }
 
 input:focus {
-    box-shadow: 3px 5px 6px rgba(0, 0, 0,0.3);
+    box-shadow: 3px 5px 10px rgba(0, 0, 0,0.2);
     border: 1px solid #1c28cc;
 }
 
 .pswd:invalid {
     border: 1px solid red;
+}
+
+.account {
+    padding: 0 3em;
+    /* border: 1px solid #000000;s */
+
+}
+
+.create {
+    padding: 1em;
+    margin: 0;
+    border:none;
+    background-color: rgb(146, 105, 16);
+    border-radius: 10px;
+    width: 10rem;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0,0.2);
+    margin-bottom: 2rem;
 }
 
 
