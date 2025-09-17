@@ -140,6 +140,10 @@ input:focus {
 
 }
 
+.account p{
+    font-weight: 900;
+}
+
 .create {
     padding: 1em;
     margin: 0;
@@ -151,6 +155,11 @@ input:focus {
     font-weight: 600;
     box-shadow: 3px 3px 3px rgba(0, 0, 0,0.2);
     margin-bottom: 2rem;
+}
+
+.create:hover{
+    background-color: rgb(119, 86, 15);
+    /* box-shadow: 3px 3px 3px rgba(0, 0, 0,0.8); */
 }
 
 
